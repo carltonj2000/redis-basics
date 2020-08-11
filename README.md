@@ -16,4 +16,8 @@ docker volume create redis
 npm run redis
 ## Run client via line below
 cd client; npm run docker:start
+## Or
+cd client
+npm run docker:build
+npm run docker:build:run
 ```
