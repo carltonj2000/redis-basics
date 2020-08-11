@@ -1,0 +1,13 @@
+{
+  "name": "redis-basics",
+  "version": "1.0.0",
+  "description": "Redis : The Basics for beginners",
+  "main": "index.js",
+  "scripts": {
+    "redis": "docker run -it --rm --name redis --net redis -v ${PWD}/config:/etc/redis/ -v redis:/data/ redis:6.0-alpine redis-server /etc/redis/redis.conf",
+    "redis:stop": "docker rm -f redis"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

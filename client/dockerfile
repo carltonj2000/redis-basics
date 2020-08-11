@@ -1,0 +1,7 @@
+FROM node:14.7-alpine3.12
+ENV HOSTNAME redis
+WORKDIR /client
+COPY package*.json /client/
+RUN npm install
+COPY *.js /client/
+CMD ["npm", "run", "start"]
